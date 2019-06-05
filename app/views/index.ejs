@@ -5,6 +5,27 @@
   </head>
   <body>
     <h1>Hello World</h1>
+    <div id="chatWindow"></div>
     <script type="text/javascript" language="javascript" src="javascript/jquery-3.4.1.min.js"></script>
+    <script src=" https://daveramsey.orbita.cloud:8443/chatbot/chat-plugin.js"></script>
+    <script>
+      var option = {
+                   domId: 'chatWindow',
+                   launchWord: 'open',
+                   name: 'Orbita',
+                   position: 'absolute',
+                   themeCode: '3faeec', //optional
+                   serverUrl: 'https://daveramsey.orbita.cloud:8443/oeapi',
+                   oathuserverUrl: 'https://daveramsey.orbita.cloud:8443',
+                   clientId: '7As0cZvkIjFiOsuGcas2ahSuIFLGmscZJuCJrfsSXr3Y6BaPjjSrPeVsEy9Mch',
+                   clientSecret: 'h6IBXdBMzyz6mowG4qmuSu6ORkX1AeXIbcNmQ0hjiFNHn6KCtM96CPUtF13IVEk4jSpgUIUVBlcHk089hJAXAW4EcJIjzppvmBFQGKxykzm7BYIHFvW7QDrQ9wbGIxKmhauLs6fdI1jiJCtgdsMBrVcJUtcRZFtWtNKjHYxa8vEakYOO4MpdyoKc6XUbGWnGevt0e011FhVIYoRRUMIZnyed4gGIGRB6DZLhYh1rljK6sHsgCUqwG6ZjYzkqMLeW',
+                   theme: 'inline',
+                   enableLogin: true
+                   };
+      
+                   if (OrbitaChatBotPlugin) {
+                   OrbitaChatBotPlugin.initPlugin(option);
+                   }
+      </script>
   </body>
 </html>
