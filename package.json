@@ -2,7 +2,7 @@
   "name": "tech-spike-orbita-chatbot",
   "version": "1.0.0",
   "description": "",
-  "main": "./app/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "http-server ./app -d false"
@@ -21,6 +21,7 @@
     "http-server": "^0.11.1"
   },
   "dependencies": {
-    "node-static": "^0.7.11"
+    "ejs": "^2.6.1",
+    "express": "^4.17.1"
   }
 }
