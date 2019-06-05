@@ -2,7 +2,7 @@
   "name": "tech-spike-orbita-chatbot",
   "version": "1.0.0",
   "description": "",
-  "main": "./app/index.html",
+  "main": "./app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "http-server ./app -d false"
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/BuddyLReno/tech-spike-orbita-chatbot#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "node-static": "^0.7.11"
   }
 }
